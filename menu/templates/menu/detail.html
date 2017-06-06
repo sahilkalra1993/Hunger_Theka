@@ -1,0 +1,59 @@
+
+
+{% extends 'home/home.html' %}
+{% block body%}
+
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #262626; height:75px; ">
+<h1 style="text-align: center; font-family: Pacifico; color : #c2c0c0"> {{item.name}}</h1>
+</div>
+
+</div>
+
+<div class="row">
+<h1 style="color: transparent;">...</h1></div>
+
+
+<div class="container" >
+  <h2 style="text-align: center;color: #000000; font-family: Pacifico; font-weight: bold;">Menu</h2>
+  
+  <div class="row">
+  <h2 style="color: transparent;">...</h2></div>
+  <table class="table table-hover" style= "text-align: center; background-color: #e6ffe6">
+    <thead>
+      <tr>
+        <th style="text-align: center; color: #000000; font-weight: bold;">
+        <h3 style="color: #000000; font-weight: bold; font-family: Pacifico;"> Name </h3>
+        </th>
+        <th style="text-align: center; color: #000000; font-weight: bold;">
+        <h3 style="color: #000000; font-weight: bold; font-family: Pacifico;"> Size </h3>
+        </th>
+        <th style="text-align: center; color: #000000; font-weight: bold;">
+        <h3 style="color: #000000; font-weight: bold; font-family: Pacifico;"> Price </h3>
+        </th>
+      </tr>
+    </thead>
+    
+    <tbody>
+    {% for list in item.detail_set.all %}
+      <tr>
+        <td>
+        <h4 style="color: #000000; font-weight: bold; font-family: Pacifico;">{{list.name}}</h4>
+        </td>
+        <td>
+        <h4 style="color: #000000; font-weight: bold; font-family: Pacifico;">{{list.size}}</h4>
+        </td>
+        <td>
+        <h4 style="color: #000000; font-weight: bold; font-family: Pacifico;">{{list.price}}</h4>
+        </td>
+        
+      </tr>
+    {% endfor %}  
+    </tbody>
+  </table>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,35 @@
+body {
+    background-color: #262626;
+}
+
+
+
+
+
+.navbar-inverse{
+    border-radius: 0;
+}
+
+.navbar-brand{
+	font-family: 'Pacifico', cursive;
+}
+
+.social-box {
+  display: inline;
+  width: 3em;
+  height: 3em;
+  
+  text-align: center;
+}
+
+h1 {
+    text-align: center; 
+    font-family: Pacifico; 
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center; 
+    font-family: Pacifico; 
+    color: #ffffff;
+}

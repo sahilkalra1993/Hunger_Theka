@@ -1,0 +1,19 @@
+{% extends 'home/home.html' %}
+{% block body%}
+
+
+{% for item in all_menu %}
+
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+	<div class="thumbnail" style="border: 2px solid; border-radius: 210px; background-color: gray; border-color: #e3e3e3; border-style:circle box-shadow: none">
+	<a href="{% url 'menu:detail' item.id%}">
+	<img src="{{item.image.url }}" class="img-circle center-block" alt="Cinque Terre" width="290" height="290" style="allign: center"/>
+	</a>
+	<div class="caption">
+          <h2 style="text-align: center; font-family: Pacifico; color: #ffffff;">{{item.name}}	</h2>
+    </div>
+    </div>
+    </div>
+    
+{% endfor %}
+{% endblock %}

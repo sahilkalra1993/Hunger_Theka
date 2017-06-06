@@ -1,0 +1,55 @@
+body{
+	background: white url("images/pasta.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.img-thumbnail{
+background-color: #e3e3e4;
+}
+
+
+img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+.navbar-inverse{
+    border-radius: 0;
+}
+
+.navbar-brand{
+	font-family: 'Pacifico', cursive;
+}
+
+
+.social-box {
+  display: inline;
+  width: 3em;
+  height: 3em;
+  
+  text-align: center;
+}
+
+h1 {
+    text-align: center; 
+    font-family: Pacifico; 
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center; 
+    font-family: Pacifico; 
+    color: #ffffff;
+}
+
